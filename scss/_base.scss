@@ -1,0 +1,56 @@
+// Fuentes
+$f_ultra: 'Frutiger-Ultra';
+$f_light: 'Frutiger-Light';
+$f_roman: 'Frutiger-Roman';
+$f_italic: 'Frutiger-Italic';
+
+
+@font-face {
+    font-family: 'Frutiger-Ultra';
+    src: url('../assets/fonts/Frutiger-UltraBlack.eot');
+    src: url('../assets/fonts/Frutiger-UltraBlack.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/Frutiger-UltraBlack.woff2') format('woff2'),
+        url('../assets/fonts/Frutiger-UltraBlack.woff') format('woff'),
+        url('../assets/fonts/Frutiger-UltraBlack.ttf') format('truetype'),
+        url('../assets/Frutiger-UltraBlack.svg#Frutiger-UltraBlack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Frutiger-Light';
+    src: url('../assets/fonts/Frutiger-Light.eot');
+    src: url('../assets/fonts/Frutiger-Light.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/Frutiger-Light.woff2') format('woff2'),
+        url('../assets/fonts/Frutiger-Light.woff') format('woff'),
+        url('../assets/fonts/Frutiger-Light.ttf') format('truetype'),
+        url('../assets/fonts/Frutiger-Light.svg#Frutiger-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Frutiger-Roman';
+    src: url('../assets/fonts/FrutigerBQ-Roman.eot');
+    src: url('../assets/fonts/FrutigerBQ-Roman.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/FrutigerBQ-Roman.woff2') format('woff2'),
+        url('../assets/fonts/FrutigerBQ-Roman.woff') format('woff'),
+        url('../assets/fonts/FrutigerBQ-Roman.ttf') format('truetype'),
+        url('../assets/fonts/FrutigerBQ-Roman.svg#FrutigerBQ-Roman') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Frutiger-Italic';
+    src: url('../assets/fonts/Frutiger-BlackItalic.eot');
+    src: url('../assets/fonts/Frutiger-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/Frutiger-BlackItalic.woff2') format('woff2'),
+        url('../assets/fonts/Frutiger-BlackItalic.woff') format('woff'),
+        url('../assets/fonts/Frutiger-BlackItalic.ttf') format('truetype'),
+        url('../assets/fonts/Frutiger-BlackItalic.svg#Frutiger-BlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+}
+
+
