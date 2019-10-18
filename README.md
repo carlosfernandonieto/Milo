@@ -1,5 +1,5 @@
 # Boilerplate HTML
-Boilerplate HTML5, CSS3, SASS, JS
+Milo HTML
 
 Instalación
 ====================
