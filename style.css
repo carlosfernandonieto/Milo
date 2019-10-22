@@ -10593,6 +10593,14 @@ a.text-dark:hover, a.text-dark:focus {
   font-style: italic;
 }
 
+@font-face {
+  font-family: 'Frutiger-Italic-Bold';
+  src: url("../assets/fonts/Frutiger-BoldItalic.eot");
+  src: url("../assets/fonts/Frutiger-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Frutiger-BoldItalic.woff2") format("woff2"), url("../assets/fonts/Frutiger-BoldItalic.woff") format("woff"), url("../assets/fonts/Frutiger-BoldItalic.ttf") format("truetype"), url("../assets/fonts/Frutiger-BoldItalic.svg#Frutiger-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+}
+
 header {
   z-index: 10;
   margin-bottom: -75px;
@@ -10601,6 +10609,10 @@ header {
 header #main-menu {
   font-family: "Frutiger-Ultra";
   text-transform: uppercase;
+}
+
+header #main-menu .navbar-nav {
+  height: 48px;
 }
 
 header #main-menu a {
@@ -10612,6 +10624,12 @@ header #main-menu a {
 header #main-menu a.nav-link {
   padding-left: 1rem !important;
   padding-right: 1rem !important;
+}
+
+header #main-menu a.nav-link.active, header #main-menu a.nav-link:hover {
+  background: #0cac4c;
+  -webkit-box-shadow: inset -1px 3px 17px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: inset -1px 3px 17px 0px rgba(0, 0, 0, 0.75);
 }
 
 header #user-menu {
@@ -10641,7 +10659,7 @@ header #user-menu ul li:first-child a::after {
 }
 
 .slider {
-  height: 60vh;
+  height: 70vh;
   z-index: 5;
 }
 
@@ -10661,7 +10679,7 @@ header #user-menu ul li:first-child a::after {
 .slider .carousel .carousel-caption {
   position: absolute;
   right: 15%;
-  bottom: 40%;
+  bottom: 30%;
   right: 15%;
   z-index: 10;
   padding-top: 20px;
@@ -10699,6 +10717,28 @@ header #user-menu ul li:first-child a::after {
   font-family: "Frutiger-Ultra";
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.breadcrumb {
+  background-color: transparent;
+  font-family: "Frutiger-Italic-Bold";
+  margin-top: 28px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.breadcrumb a {
+  color: #6b6b6b;
+}
+
+.breadcrumb li.active {
+  color: #6b6b6b;
+  text-decoration: underline;
+}
+
+.breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  color: #0cac4c;
 }
 
 #hashtag {
@@ -10753,6 +10793,71 @@ header #user-menu ul li:first-child a::after {
   padding-bottom: 15px;
   color: #fff;
   font-size: 25px;
+}
+
+#c-producto .element-item {
+  background: #41c463;
+  padding: 10px 11px;
+  margin-bottom: 10px;
+  border-left: 10px solid #fff;
+}
+
+#c-producto .element-item button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  background-color: transparent;
+}
+
+#c-producto .element-item button:focus {
+  outline: none;
+}
+
+#c-producto .grid {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #41c463;
+}
+
+#c-producto .grid button {
+  padding: 0;
+}
+
+#c-producto #filters {
+  margin: 30px 0;
+  font-family: "Frutiger-Light";
+  color: #393939;
+  font-size: 20px;
+}
+
+#c-producto #filters button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 0;
+  background-color: transparent;
+}
+
+#c-producto #filters button::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: url("../assets/images/check_btn.png") no-repeat;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+#c-producto #filters button.is-checked::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: url("../assets/images/act-check_btn.png") no-repeat;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+#c-producto #filters button:focus {
+  outline: none;
 }
 
 footer {

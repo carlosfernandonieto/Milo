@@ -1,0 +1,57 @@
+#c-producto{
+    .element-item{
+        background: $verde_prod;
+        padding: 10px 11px;
+        margin-bottom: 10px;
+        border-left: 10px solid $blanco;
+        button{
+            appearance: none;
+            border: 0;
+            background-color: transparent;
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+
+    .grid{
+        padding-bottom: 40px;
+        border-bottom: 1px solid $verde_prod;
+        button{
+            padding: 0;
+        }
+    }
+
+    #filters{
+        margin: 30px 0;
+        font-family: $f_light;
+        color: $gris;
+        font-size: 20px;
+        button{
+            appearance: none;
+            border: 0;
+            background-color: transparent;
+            &::before{
+                content: "";
+                width: 15px;
+                height: 15px;
+                background: url('../assets/images/check_btn.png') no-repeat;
+                display: inline-block;
+                margin-right: 5px;
+            }
+            &.is-checked{
+                &::before{
+                    content: "";
+                    width: 15px;
+                    height: 15px;
+                    background: url('../assets/images/act-check_btn.png') no-repeat;
+                    display: inline-block;
+                    margin-right: 5px;
+                }
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+}

@@ -4,6 +4,9 @@ header{
     #main-menu{
         font-family: $f_ultra;
         text-transform: uppercase;
+        .navbar-nav{
+            height: 48px;
+        }
         a{
             color: $blanco;
             font-size: 20px;
@@ -11,8 +14,16 @@ header{
             &.nav-link{
                 padding-left: 1rem!important;
                 padding-right: 1rem!important;
+                &.active,
+                &:hover{
+                    background: $verde;
+                    -webkit-box-shadow: inset -1px 3px 17px 0px rgba(0,0,0,0.75);
+                    -moz-box-shadow: inset -1px 3px 17px 0px rgba(0,0,0,0.75);
+                    box-shadow: inset -1px 3px 17px 0px rgba(0,0,0,0.75);
+                }
             }
         }
+
     }
 
     #user-menu{
@@ -47,7 +58,7 @@ header{
 }
 
 .slider{
-    height: 60vh;
+    height: 70vh;
     z-index: 5;
     .carousel{
         .carousel-inner{
@@ -69,7 +80,7 @@ header{
         .carousel-caption {
             position: absolute;
             right: 15%;
-            bottom: 40%;
+            bottom: 30%;
             right: 15%;
             z-index: 10;
             padding-top: 20px;
@@ -104,6 +115,29 @@ header{
         font-family: $f_ultra;
         letter-spacing: 2px;
         text-transform: uppercase;
+    }
+}
+
+.breadcrumb{
+    background-color: transparent;
+    font-family: $f_italic_b;
+    margin-top: 28px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    a{
+        color: $gris_bread;
+    }
+    li{
+        &.active{
+            color: $gris_bread;
+            text-decoration: underline;
+        }
+    }
+    .breadcrumb-item + .breadcrumb-item{
+        &::before{
+            color: $verde;
+        }
     }
 }
 

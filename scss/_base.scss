@@ -3,6 +3,7 @@ $f_ultra: 'Frutiger-Ultra';
 $f_light: 'Frutiger-Light';
 $f_roman: 'Frutiger-Roman';
 $f_italic: 'Frutiger-Italic';
+$f_italic_b: 'Frutiger-Italic-Bold';
 
 
 @font-face {
@@ -52,5 +53,19 @@ $f_italic: 'Frutiger-Italic';
     font-weight: 900;
     font-style: italic;
 }
+
+@font-face {
+    font-family: 'Frutiger-Italic-Bold';
+    src: url('../assets/fonts/Frutiger-BoldItalic.eot');
+    src: url('../assets/fonts/Frutiger-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/Frutiger-BoldItalic.woff2') format('woff2'),
+        url('../assets/fonts/Frutiger-BoldItalic.woff') format('woff'),
+        url('../assets/fonts/Frutiger-BoldItalic.ttf') format('truetype'),
+        url('../assets/fonts/Frutiger-BoldItalic.svg#Frutiger-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
 
 
