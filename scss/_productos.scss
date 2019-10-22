@@ -1,4 +1,4 @@
-#c-producto{
+#c-productos{
     .element-item{
         background: $verde_prod;
         padding: 10px 11px;
@@ -54,4 +54,146 @@
             }
         }
     }
+}
+
+#c-producto{
+    padding-bottom: 40px;
+    border-bottom: 1px solid $gris_borde;
+    margin-top: 50px;
+    font-family: $f_roman;
+    color: $gris;
+    font-size: 20px;
+    line-height: 22px;
+    h2{
+        font-family: $f_bold;
+        color: $gris;
+        font-size: 28px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    #c-info-producto{
+        #c-img-select-producto{
+            margin-bottom: 50px;
+        }
+        .dropdown{
+            #choose{
+                color: $verde;
+                font-size: 17px;
+                line-height: 19px;
+                font-family: $f_bold;
+            }
+            button{
+                border: 1px solid $gris;
+                background-color: transparent;
+                font-family: $f_roman;
+                letter-spacing: 2px;
+                color: $gris;
+            }
+        }
+
+        @include media-breakpoint-up(lg){
+            border-right: 1px solid $verde;
+        }
+        #tabla-producto{
+            button{
+                appearance: none;
+                background-color: transparent;
+                border: 2px solid $gris_borde;
+                padding: 5px 10px;
+                color: $verde;
+                text-transform: uppercase;
+                margin-bottom: 30px;
+                font-family: $f_bold;
+                &[aria-expanded='true']{
+                    &::after{
+                        transform: rotate(-90deg);
+                    }
+                }
+                &#saber-mas{
+                 border: 2px solid $blanco;
+                 color: $blanco;
+                 &::after{
+                    background: url('../assets/images/after-dropdown-b.png') no-repeat;
+                    width: 9px;
+                    height: 17px;
+                    top: 5px;
+                 }   
+                }
+            }
+    
+            .collapse,
+            .collapsing{
+                margin-bottom: 40px;
+                background: $verde;
+                border-radius: 2px;
+                padding: 30px 70px;
+                @include media-breakpoint-down(md){
+                    padding: 30px 30px;
+                }
+            }
+            .cont-tabla{
+                background: $hueso;
+                border-radius: 3px;
+                padding: 26px;
+                font-family: $f_roman;
+                color: #575857;
+                h3{
+                    color: $verde;
+                    font-family: $f_bold;
+                    font-size: 22px;
+                }
+                table{
+                    color: #575857;
+                    font-size: 17px;
+                    border-bottom: 2px solid $verde;
+                    td{
+                        padding: 0.45rem;
+                    }
+                }
+                #t-porcion,
+                #c-porcion{
+                    font-family: $f_bold;
+                    color: #484948;
+                    font-size: 17px;
+                }
+                #l-tabla{
+                    color: $gris;
+                    font-size: 14px;
+                    line-height: 16px;
+                    font-family: $f_bold;
+                }
+            }
+        }
+    }
+
+    #c-sugerido-producto{
+        h3{
+            font-family: $f_ultra;
+            color: #3a3a3a;
+        }
+        .c-prod-sugerido{
+            .c-img-prod-sugerido{
+                background: $verde_prod;
+            }
+            .btn-prod-sugerido{
+                a{
+                    font-family: $f_bold;
+                    color: #3a3a3a;
+                    font-size: 25px;
+                    &::after{
+                        content:"";
+                        width: 17px;
+                        height: 9px;
+                        background:url('../assets/images/after-dropdown.png') no-repeat;
+                        display: inline-block;
+                        transform: rotate(-90deg);
+                        position: relative;
+                        top: 6px;
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+    
 }
