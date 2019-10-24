@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -10755,7 +10756,8 @@ header #user-menu ul li:first-child a::after {
   padding: 44px 0 33px;
 }
 
-.c-categorias .text {
+/* Caja Botón Final */
+.c-caja-btn-f .text {
   color: white;
   font-size: 24px;
   position: absolute;
@@ -10767,7 +10769,7 @@ header #user-menu ul li:first-child a::after {
   letter-spacing: 1px;
 }
 
-.c-categorias .overlay {
+.c-caja-btn-f .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -10781,16 +10783,16 @@ header #user-menu ul li:first-child a::after {
   background-color: #000;
 }
 
-.c-categorias:hover .overlay {
+.c-caja-btn-f:hover .overlay {
   background: rgba(0, 0, 0, 0.6);
   opacity: 1;
 }
 
-.c-categorias:hover .plus {
+.c-caja-btn-f:hover .plus {
   opacity: 0;
 }
 
-.c-categorias .plus {
+.c-caja-btn-f .plus {
   position: absolute;
   display: block;
   width: 100%;
@@ -10800,6 +10802,59 @@ header #user-menu ul li:first-child a::after {
   padding-bottom: 15px;
   color: #fff;
   font-size: 25px;
+}
+
+/* Caja Botones Centro */
+.c-caja-btn-c .text {
+  color: white;
+  font-size: 24px;
+  position: absolute;
+  bottom: calc(50% - 17px);
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: "Frutiger-Ultra";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.c-caja-btn-c .text a {
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  line-height: 48px;
+  height: 42px;
+}
+
+.c-caja-btn-c .text a:after {
+  content: "";
+  width: 9px;
+  height: 17px;
+  background: url(../assets/images/after-dropdown-b.png) no-repeat;
+  display: inline-block;
+  position: relative;
+  top: 0px;
+  margin-left: 10px;
+}
+
+.c-caja-btn-c .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: #000;
+}
+
+.c-caja-btn-c:hover .overlay {
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 1;
 }
 
 /* Rating */

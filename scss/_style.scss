@@ -148,7 +148,8 @@ header{
     padding: 44px 0 33px;
 }
 
-.c-categorias{
+/* Caja Botón Final */
+.c-caja-btn-f{
     .text {
         color: white;
         font-size: 24px;
@@ -192,6 +193,58 @@ header{
         padding-bottom: 15px;
         color: #fff;
         font-size: 25px;
+    }
+    
+}
+/* Caja Botones Centro */
+.c-caja-btn-c{
+    .text {
+        color: white;
+        font-size: 24px;
+        position: absolute;
+        bottom: calc(50% - 17px);
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-family: $f_ultra;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        a{
+            color: $blanco;
+            display: inline-block;
+            padding: 5px 10px;
+            border: 1px solid $blanco;
+            line-height: 48px;
+            height: 42px;
+            &:after{
+                content: "";
+                width: 9px;
+                height: 17px;
+                background: url(../assets/images/after-dropdown-b.png) no-repeat;
+                display: inline-block;
+                position: relative;
+                top: 0px;
+                margin-left: 10px;
+            }
+        }
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #000;
+    }
+    &:hover{
+        .overlay{
+            background: rgba(0,0,0,.6);
+            opacity: 1;
+        }
     }
     
 }
