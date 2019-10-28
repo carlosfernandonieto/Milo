@@ -1,0 +1,21 @@
+#noticias{
+    h2{
+        font-family: $f_black;
+        font-size: 27px;
+        line-height: 1.2;
+    }
+    .c-titulo{
+        span{
+            font-size: 18px;
+            font-family: $f_roman;
+        }
+    }
+    .cont-texto{
+        @include texto-blanco;
+    }
+    @include btn;
+
+    .row{
+        margin-bottom: 40px;
+    }
+}

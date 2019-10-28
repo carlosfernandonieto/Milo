@@ -91,3 +91,14 @@ $f_italic_b: 'Frutiger-Italic-Bold';
 
 
 
+
+
+// Mixins
+@mixin texto-blanco {
+    color: $blanco;
+    font-size: 24px;
+    text-align: center;
+    font-family: $f_ultra;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

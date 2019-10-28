@@ -26,3 +26,43 @@
         }
     }
 }
+
+#evento{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    h1{
+        font-family: $f_ultra;
+        text-transform: uppercase;
+        font-size: 80px;
+        text-align: center;
+        color: $gris_titulo;
+        @include media-breakpoint-down(md){
+            font-size: 40px;
+        }
+    }
+    #contenido{
+        color: $gris_contenido;
+        font-family: $f_roman;
+        strong{
+            margin-bottom: 1rem;
+            display: inline-block;
+            font-family: $f_bold;
+        }
+    }
+    #c-social-media{
+        margin-top: 50px;
+    }
+    
+}
+#galeria{
+    overflow: hidden;
+    #t-galeria{
+        background: $verde;
+        padding-top: 3px;
+        h3{
+            color: $blanco;
+            font-family: $f_bold;
+            text-transform: uppercase;
+        }
+    }
+}

@@ -23,6 +23,10 @@ header{
                 }
             }
         }
+        .navbar-toggler-icon{
+            color: $blanco;
+            font-size: 30px;
+        }
 
     }
 
@@ -93,10 +97,16 @@ header{
                 margin-bottom: 0;
                 font-size: 90px;
                 line-height: 20px;
+                @include media-breakpoint-down(md){
+                    font-size: 35px;
+                }
             }
             p{
                 font-family: $f_roman;
                 font-size: 20px;
+                @include media-breakpoint-down(md){
+                    font-size: 16px;
+                }
             }
         }
     }
@@ -112,7 +122,7 @@ header{
         padding:12px 44px;
         text-decoration:none;
         text-shadow:0px 1px 0px $blanco;
-        font-family: $f_ultra;
+        font-family: $f_bold;
         letter-spacing: 2px;
         text-transform: uppercase;
     }
@@ -198,17 +208,9 @@ header{
 }
 /* Caja Botones Centro */
 .c-caja-btn-c{
+    cursor: pointer;
     .text {
-        color: white;
-        font-size: 24px;
-        position: absolute;
-        bottom: calc(50% - 17px);
-        left: 0;
-        right: 0;
-        text-align: center;
-        font-family: $f_ultra;
-        text-transform: uppercase;
-        letter-spacing: 1px;
+        @include texto-blanco;
         a{
             color: $blanco;
             display: inline-block;
@@ -239,6 +241,7 @@ header{
         opacity: 0;
         transition: .5s ease;
         background-color: #000;
+        cursor: pointer;
     }
     &:hover{
         .overlay{
@@ -273,6 +276,48 @@ header{
 .star-rating label:hover ~ label,
 .star-rating input[type=radio]:checked ~ label {
     color: $verde;
+}
+
+@mixin btn{
+    a{
+        color: $blanco;
+        display: inline-block;
+        padding: 5px 10px;
+        border: 1px solid $blanco;
+        border-radius: 0;
+        font-family: $f_bold;
+        font-size: 18px;
+        &:after{
+            content: "";
+            width: 9px;
+            height: 17px;
+            background: url(../assets/images/after-dropdown-b.png) no-repeat;
+            display: inline-block;
+            position: relative;
+            top: 2px;
+            margin-left: 10px;
+        }
+    }
+}
+
+.green-1{
+    background: #52f89a;
+    padding: 50px 0;
+    @include btn;
+    .c-img{
+        height: 108px;
+        margin-bottom: 20px;
+    }
+}
+
+.green-2{
+    background: #33ee76;
+    padding: 50px 0;
+    @include btn;
+    .c-img{
+        height: 108px;
+        margin-bottom: 20px;
+    }
 }
 
 /* Dropdown After */
@@ -326,8 +371,8 @@ $color-facebook: #3b5a9b;
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   margin: 0 0.5rem;
   border-radius: 50%;
   cursor: pointer;
@@ -397,4 +442,34 @@ $color-facebook: #3b5a9b;
     border-color: transparent;
     transform: translate(-50%, 100%);
   }
+}
+
+// Arrows
+
+.slick-next{
+    height: 17px!important;
+    width: 33px!important;
+    right: 10px!important;
+    &:before{
+        content: ""!important;
+        background: url('../assets/images/slick-next.png');
+        width: 17px;
+        height: 33px;
+        display: block;
+        opacity: 1!important;
+    }
+}
+
+.slick-prev{
+    height: 33px!important;
+    width: 17px!important;
+    left: 10px!important;
+    &:before {
+        content: ""!important;
+        background: url('../assets/images/slick-prev.png');
+        width: 17px;
+        height: 33px;
+        display: block;
+        opacity: 1!important;
+    }
 }

@@ -10647,6 +10647,11 @@ header #main-menu a.nav-link.active, header #main-menu a.nav-link:hover {
   box-shadow: inset -1px 3px 17px 0px rgba(0, 0, 0, 0.75);
 }
 
+header #main-menu .navbar-toggler-icon {
+  color: #fff;
+  font-size: 30px;
+}
+
 header #user-menu {
   font-family: "Frutiger-Light";
   background: #fff;
@@ -10711,9 +10716,21 @@ header #user-menu ul li:first-child a::after {
   line-height: 20px;
 }
 
+@media (max-width: 991.98px) {
+  .slider .carousel .carousel-caption h5 {
+    font-size: 35px;
+  }
+}
+
 .slider .carousel .carousel-caption p {
   font-family: "Frutiger-Roman";
   font-size: 20px;
+}
+
+@media (max-width: 991.98px) {
+  .slider .carousel .carousel-caption p {
+    font-size: 16px;
+  }
 }
 
 .slider .myButton {
@@ -10729,7 +10746,7 @@ header #user-menu ul li:first-child a::after {
   padding: 12px 44px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #fff;
-  font-family: "Frutiger-Ultra";
+  font-family: "Frutiger-Bold";
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -10812,13 +10829,13 @@ header #user-menu ul li:first-child a::after {
 }
 
 /* Caja Botones Centro */
+.c-caja-btn-c {
+  cursor: pointer;
+}
+
 .c-caja-btn-c .text {
-  color: white;
+  color: #fff;
   font-size: 24px;
-  position: absolute;
-  bottom: calc(50% - 17px);
-  left: 0;
-  right: 0;
   text-align: center;
   font-family: "Frutiger-Ultra";
   text-transform: uppercase;
@@ -10857,6 +10874,7 @@ header #user-menu ul li:first-child a::after {
   -webkit-transition: .5s ease;
   transition: .5s ease;
   background-color: #000;
+  cursor: pointer;
 }
 
 .c-caja-btn-c:hover .overlay {
@@ -10888,6 +10906,68 @@ header #user-menu ul li:first-child a::after {
 .star-rating label:hover ~ label,
 .star-rating input[type=radio]:checked ~ label {
   color: #0cac4c;
+}
+
+.green-1 {
+  background: #52f89a;
+  padding: 50px 0;
+}
+
+.green-1 a {
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  border-radius: 0;
+  font-family: "Frutiger-Bold";
+  font-size: 18px;
+}
+
+.green-1 a:after {
+  content: "";
+  width: 9px;
+  height: 17px;
+  background: url(../assets/images/after-dropdown-b.png) no-repeat;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  margin-left: 10px;
+}
+
+.green-1 .c-img {
+  height: 108px;
+  margin-bottom: 20px;
+}
+
+.green-2 {
+  background: #33ee76;
+  padding: 50px 0;
+}
+
+.green-2 a {
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  border-radius: 0;
+  font-family: "Frutiger-Bold";
+  font-size: 18px;
+}
+
+.green-2 a:after {
+  content: "";
+  width: 9px;
+  height: 17px;
+  background: url(../assets/images/after-dropdown-b.png) no-repeat;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  margin-left: 10px;
+}
+
+.green-2 .c-img {
+  height: 108px;
+  margin-bottom: 20px;
 }
 
 /* Dropdown After */
@@ -10924,8 +11004,8 @@ header #user-menu ul li:first-child a::after {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   margin: 0 0.5rem;
   border-radius: 50%;
   cursor: pointer;
@@ -11093,6 +11173,36 @@ header #user-menu ul li:first-child a::after {
   border-color: transparent;
   -webkit-transform: translate(-50%, 100%);
           transform: translate(-50%, 100%);
+}
+
+.slick-next {
+  height: 17px !important;
+  width: 33px !important;
+  right: 10px !important;
+}
+
+.slick-next:before {
+  content: "" !important;
+  background: url("../assets/images/slick-next.png");
+  width: 17px;
+  height: 33px;
+  display: block;
+  opacity: 1 !important;
+}
+
+.slick-prev {
+  height: 33px !important;
+  width: 17px !important;
+  left: 10px !important;
+}
+
+.slick-prev:before {
+  content: "" !important;
+  background: url("../assets/images/slick-prev.png");
+  width: 17px;
+  height: 33px;
+  display: block;
+  opacity: 1 !important;
 }
 
 #c-productos .element-item {
@@ -11397,6 +11507,100 @@ header #user-menu ul li:first-child a::after {
 
 #select button::after {
   margin-left: 80px;
+}
+
+#evento {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+#evento h1 {
+  font-family: "Frutiger-Ultra";
+  text-transform: uppercase;
+  font-size: 80px;
+  text-align: center;
+  color: #3a3a3a;
+}
+
+@media (max-width: 991.98px) {
+  #evento h1 {
+    font-size: 40px;
+  }
+}
+
+#evento #contenido {
+  color: #5e5e5e;
+  font-family: "Frutiger-Roman";
+}
+
+#evento #contenido strong {
+  margin-bottom: 1rem;
+  display: inline-block;
+  font-family: "Frutiger-Bold";
+}
+
+#evento #c-social-media {
+  margin-top: 50px;
+}
+
+#galeria {
+  overflow: hidden;
+}
+
+#galeria #t-galeria {
+  background: #0cac4c;
+  padding-top: 3px;
+}
+
+#galeria #t-galeria h3 {
+  color: #fff;
+  font-family: "Frutiger-Bold";
+  text-transform: uppercase;
+}
+
+#noticias h2 {
+  font-family: "Frutiger-Black";
+  font-size: 27px;
+  line-height: 1.2;
+}
+
+#noticias .c-titulo span {
+  font-size: 18px;
+  font-family: "Frutiger-Roman";
+}
+
+#noticias .cont-texto {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  font-family: "Frutiger-Ultra";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#noticias a {
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  border-radius: 0;
+  font-family: "Frutiger-Bold";
+  font-size: 18px;
+}
+
+#noticias a:after {
+  content: "";
+  width: 9px;
+  height: 17px;
+  background: url(../assets/images/after-dropdown-b.png) no-repeat;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  margin-left: 10px;
+}
+
+#noticias .row {
+  margin-bottom: 40px;
 }
 
 footer {
