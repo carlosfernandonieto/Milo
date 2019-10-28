@@ -1,5 +1,6 @@
 // Fuentes
 $f_ultra: 'Frutiger-Ultra';
+$f_black: 'Frutiger-Black';
 $f_bold: 'Frutiger-Bold';
 $f_light: 'Frutiger-Light';
 $f_roman: 'Frutiger-Roman';
@@ -76,6 +77,17 @@ $f_italic_b: 'Frutiger-Italic-Bold';
     font-weight: bold;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Frutiger-Black';
+    src: url('../assets/fonts/FrutigerBQ-Black.woff2') format('woff2'),
+        url('../assets/fonts/FrutigerBQ-Black.woff') format('woff'),
+        url('../assets/fonts/FrutigerBQ-Black.ttf') format('truetype'),
+        url('../assets/fonts/FrutigerBQ-Black.svg#FrutigerBQ-Black') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
 
 
 

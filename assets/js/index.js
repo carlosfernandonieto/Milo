@@ -16,6 +16,23 @@ jQuery(document).ready(function($) {
         }
         }
     });
+
+    // Lonchera
+    var $gridLonchera = $('.grid-lonchera').isotope({
+        itemSelector: '.element-item',
+        layoutMode: 'fitRows',
+        gutter: 10,
+        getSortData: {
+        name: '.name',
+        symbol: '.symbol',
+        number: '.number parseInt',
+        category: '[data-category]',
+        weight: function( itemElem ) {
+            var weight = $( itemElem ).find('.weight').text();
+            return parseFloat( weight.replace( /[\(\)]/g, '') );
+        }
+        }
+    });
     
     // filter functions
     var filterFns = {
@@ -38,13 +55,15 @@ jQuery(document).ready(function($) {
         filterValue = filterFns[ filterValue ] || filterValue;
         $grid.isotope({ filter: filterValue });
     });
-    
-    // bind sort button click
-    $('#sorts').on( 'click', 'button', function() {
-        var sortByValue = $(this).attr('data-sort-by');
-        $grid.isotope({ sortBy: sortByValue });
+
+    // bind filter button click
+    $('#filters').on( 'click', 'button', function() {
+        var filterValue = $( this ).attr('data-filter');
+        // use filterFn if matches value
+        filterValue = filterFns[ filterValue ] || filterValue;
+        $gridLonchera.isotope({ filter: filterValue });
     });
-    
+
     // change is-checked class on buttons
     $('.button-group').each( function( i, buttonGroup ) {
         var $buttonGroup = $( buttonGroup );

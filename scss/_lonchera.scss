@@ -1,0 +1,50 @@
+.c-lonchera{
+    .element-item{
+        background: none!important;
+        padding:0!important;
+        border-left: 10px solid #fff!important;
+        .overlay {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #000;
+            color:$blanco;
+            flex-direction: column;
+            h3{
+                font-size: 24px;
+                font-family: $f_black;
+            }
+            a{
+                color: $blanco;
+                display: inline-block;
+                padding: 5px 10px;
+                border: 1px solid $blanco;
+                border-radius: 0;
+                font-family: $f_bold;
+                font-size: 18px;
+                &:after{
+                    content: "";
+                    width: 9px;
+                    height: 17px;
+                    background: url(../assets/images/after-dropdown-b.png) no-repeat;
+                    display: inline-block;
+                    position: relative;
+                    top: 2px;
+                    margin-left: 10px;
+                }
+            }
+        }
+        &:hover{
+            .overlay{
+                background: rgba(0,0,0,.6);
+                opacity: 1;
+            }
+        }
+        
+    }
+}

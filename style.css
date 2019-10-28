@@ -10609,6 +10609,13 @@ a.text-dark:hover, a.text-dark:focus {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Frutiger-Black';
+  src: url("../assets/fonts/FrutigerBQ-Black.woff2") format("woff2"), url("../assets/fonts/FrutigerBQ-Black.woff") format("woff"), url("../assets/fonts/FrutigerBQ-Black.ttf") format("truetype"), url("../assets/fonts/FrutigerBQ-Black.svg#FrutigerBQ-Black") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
 header {
   z-index: 10;
   margin-bottom: -75px;
@@ -11305,6 +11312,91 @@ header #user-menu ul li:first-child a::after {
   position: relative;
   top: 6px;
   float: right;
+}
+
+.c-lonchera .element-item {
+  background: none !important;
+  padding: 0 !important;
+  border-left: 10px solid #fff !important;
+}
+
+.c-lonchera .element-item .overlay {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: #000;
+  color: #fff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.c-lonchera .element-item .overlay h3 {
+  font-size: 24px;
+  font-family: "Frutiger-Black";
+}
+
+.c-lonchera .element-item .overlay a {
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  border-radius: 0;
+  font-family: "Frutiger-Bold";
+  font-size: 18px;
+}
+
+.c-lonchera .element-item .overlay a:after {
+  content: "";
+  width: 9px;
+  height: 17px;
+  background: url(../assets/images/after-dropdown-b.png) no-repeat;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  margin-left: 10px;
+}
+
+.c-lonchera .element-item:hover .overlay {
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+}
+
+#eventos {
+  margin: 40px 0 50px;
+}
+
+#eventos .c-caja-btn-c {
+  border-left: 5px solid #fff;
+  border-right: 5px solid #fff;
+  margin-bottom: 10px;
+}
+
+#eventos .c-caja-btn-c:first-child {
+  border-left: 0;
+}
+
+#eventos .c-caja-btn-c:nth-child(4n) {
+  border-left: 0;
+}
+
+#select button {
+  border: 1px solid #393939;
+  background-color: transparent;
+  font-family: "Frutiger-Roman";
+  letter-spacing: 2px;
+  color: #393939;
+}
+
+#select button::after {
+  margin-left: 80px;
 }
 
 footer {

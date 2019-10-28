@@ -1,0 +1,28 @@
+#eventos{
+    margin: 40px 0 50px;
+    .c-caja-btn-c{
+        border-left: 5px solid $blanco;
+        border-right: 5px solid $blanco;
+        margin-bottom: 10px;
+        &:first-child{
+            border-left: 0;
+        }
+        &:nth-child(4n){
+            border-left: 0;
+        }
+    }
+}
+
+#select{
+    button{
+        border: 1px solid #393939;
+        background-color: transparent;
+        font-family: "Frutiger-Roman";
+        letter-spacing: 2px;
+        color: #393939;
+
+        &::after{
+            margin-left: 80px;
+        }
+    }
+}
