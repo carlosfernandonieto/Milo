@@ -89,10 +89,6 @@ $f_italic_b: 'Frutiger-Italic-Bold';
 }
 
 
-
-
-
-
 // Mixins
 @mixin texto-blanco {
     color: $blanco;
@@ -101,4 +97,19 @@ $f_italic_b: 'Frutiger-Italic-Bold';
     font-family: $f_ultra;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+@mixin placeholder{
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $blanco;
+        opacity: 1; /* Firefox */
+      }
+      
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $blanco;
+    }
+      
+    &::-ms-input-placeholder { /* Microsoft Edge */
+        color: $blanco;
+    }
 }
