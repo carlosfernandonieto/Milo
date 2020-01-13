@@ -195,6 +195,7 @@ header{
                 background-color: $verde;
             }
         }
+        
         .carousel-caption {
             position: absolute;
             right: 15%;
@@ -204,14 +205,14 @@ header{
             padding-top: 20px;
             padding-bottom: 20px;
             color: #fff;
-            text-align: left;
+            text-align: right;
             text-shadow: 1px 1px 1px $negro;
-            h5{
+            h5,h6{
                 font-family: $f_ultra;
                 text-transform: uppercase;
                 margin-bottom: 0;
                 font-size: 90px;
-                line-height: 20px;
+                line-height: 90px;
                 @include media-breakpoint-down(md){
                     font-size: 35px;
                 }
@@ -222,6 +223,12 @@ header{
                 @include media-breakpoint-down(md){
                     font-size: 16px;
                 }
+            }
+        }
+        .caption-interna{
+            bottom: 10vh!important;
+            @include media-breakpoint-up(xl){
+                bottom: 20vh;
             }
         }
     }

@@ -10847,20 +10847,20 @@ header #user-menu ul li:first-child a::after {
   padding-top: 20px;
   padding-bottom: 20px;
   color: #fff;
-  text-align: left;
+  text-align: right;
   text-shadow: 1px 1px 1px #000;
 }
 
-.slider .carousel .carousel-caption h5 {
+.slider .carousel .carousel-caption h5, .slider .carousel .carousel-caption h6 {
   font-family: "Frutiger-Ultra";
   text-transform: uppercase;
   margin-bottom: 0;
   font-size: 90px;
-  line-height: 20px;
+  line-height: 90px;
 }
 
 @media (max-width: 991.98px) {
-  .slider .carousel .carousel-caption h5 {
+  .slider .carousel .carousel-caption h5, .slider .carousel .carousel-caption h6 {
     font-size: 35px;
   }
 }
@@ -10873,6 +10873,16 @@ header #user-menu ul li:first-child a::after {
 @media (max-width: 991.98px) {
   .slider .carousel .carousel-caption p {
     font-size: 16px;
+  }
+}
+
+.slider .carousel .caption-interna {
+  bottom: 10vh !important;
+}
+
+@media (min-width: 1200px) {
+  .slider .carousel .caption-interna {
+    bottom: 20vh;
   }
 }
 
