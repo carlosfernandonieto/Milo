@@ -17,6 +17,10 @@ jQuery(document).ready(function($) {
         }
     });
 
+    $('.grid').imagesLoaded( function() {
+      // images have loaded
+    });
+
     // Lonchera
     var $gridLonchera = $('.grid-lonchera').isotope({
         itemSelector: '.element-item',
@@ -33,7 +37,28 @@ jQuery(document).ready(function($) {
         }
         }
     });
-    
+
+    // init Isotope
+    var $gridBeneficios = $('.grid-beneficios').isotope({
+      itemSelector: '.element-item',
+      layoutMode: 'fitRows',
+      gutter: 10,
+      getSortData: {
+      name: '.name',
+      symbol: '.symbol',
+      number: '.number parseInt',
+      category: '[data-category]',
+      weight: function( itemElem ) {
+          var weight = $( itemElem ).find('.weight').text();
+          return parseFloat( weight.replace( /[\(\)]/g, '') );
+      }
+      }
+    });
+    // layout Isotope after each image loads
+    $grid.imagesLoaded().progress( function() {
+      $grid.isotope('fitRows');
+    }); 
+
     // filter functions
     var filterFns = {
         // show if number is greater than 50
