@@ -99,17 +99,26 @@ $f_italic_b: 'Frutiger-Italic-Bold';
     letter-spacing: 1px;
 }
 
-@mixin placeholder{
-    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-        color: $blanco;
-        opacity: 1; /* Firefox */
-      }
-      
-    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
-        color: $blanco;
+@mixin optional-at-root($sel) {
+    @at-root #{if(not &, $sel, selector-append(&, $sel))} {
+      @content;
     }
-      
-    &::-ms-input-placeholder { /* Microsoft Edge */
-        color: $blanco;
+  }
+  
+  @mixin placeholder {
+    @include optional-at-root('::-webkit-input-placeholder') {
+      @content;
+    }
+  
+    @include optional-at-root(':-moz-placeholder') {
+      @content;
+    }
+  
+    @include optional-at-root('::-moz-placeholder') {
+      @content;
+    }
+  
+    @include optional-at-root(':-ms-input-placeholder') {
+      @content;
     }
 }

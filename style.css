@@ -11164,7 +11164,6 @@ header #user-menu ul li:first-child a::after {
   margin-bottom: 20px;
 }
 
-/* Dropdown After */
 .dropdown-toggle::after {
   background: url("../assets/images/after-dropdown.png") no-repeat;
   width: 17px;
@@ -11416,44 +11415,6 @@ form.example input[type=text] {
   float: left;
   width: 80%;
   background-color: transparent;
-}
-
-form.example input[type=text]::-webkit-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #fff;
-  opacity: 1;
-  /* Firefox */
-}
-
-form.example input[type=text]:-ms-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #fff;
-  opacity: 1;
-  /* Firefox */
-}
-
-form.example input[type=text]::-ms-input-placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #fff;
-  opacity: 1;
-  /* Firefox */
-}
-
-form.example input[type=text]::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #fff;
-  opacity: 1;
-  /* Firefox */
-}
-
-form.example input[type=text]:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: #fff;
-}
-
-form.example input[type=text]::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: #fff;
 }
 
 /* Style the submit button */
@@ -11711,6 +11672,8 @@ form.example::after {
 .grid-beneficios .element-item {
   max-height: 355px;
   min-height: 355px;
+  margin-bottom: 0 !important;
+  border-left: 5px solid #fff !important;
 }
 
 .grid-beneficios .element-item .position-relative {
@@ -11721,13 +11684,13 @@ form.example::after {
 .grid-beneficios .element-item .position-relative img {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 100%;
+  height: 350px;
 }
 
 .c-lonchera .element-item {
   background: none !important;
   padding: 0 !important;
-  border-left: 10px solid #fff !important;
+  border-left: 10px solid #fff;
 }
 
 .c-lonchera .element-item .overlay {
@@ -11901,6 +11864,97 @@ form.example::after {
 
 #noticias .row {
   margin-bottom: 40px;
+}
+
+#registro-login h2 {
+  font-family: "Frutiger-Ultra";
+  font-size: 75px;
+  line-height: 77px;
+  margin-bottom: 0;
+}
+
+#registro-login input {
+  background: none;
+  border-radius: 0;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+#registro-login input ::-webkit-input-placeholder {
+  color: #fff;
+}
+
+#registro-login input :-moz-placeholder {
+  color: #fff;
+}
+
+#registro-login input ::-moz-placeholder {
+  color: #fff;
+}
+
+#registro-login input :-ms-input-placeholder {
+  color: #fff;
+}
+
+#registro-login label {
+  font-family: "Frutiger-Bold";
+}
+
+#registro-login .custom-select {
+  background: url("../assets/images/bg_dropdown_dates.png") no-repeat right center;
+  border-radius: 0;
+  border: 0;
+  color: #fff;
+  font-size: 22px;
+}
+
+#registro-login .custom-select option {
+  color: #fff;
+}
+
+#registro-login #section1 {
+  background: #0cac4c;
+  color: #fff;
+  padding-top: 40vh;
+}
+
+#registro-login #section1 input {
+  border: 1px solid #fff;
+}
+
+#registro-login #section2 {
+  color: #0cac4c;
+  padding-top: 30px;
+}
+
+#registro-login #section2 input {
+  border: 1px solid #0cac4c;
+  color: #0cac4c;
+}
+
+#registro-login #section2 input ::-webkit-input-placeholder {
+  color: #0cac4c;
+}
+
+#registro-login #section2 input :-moz-placeholder {
+  color: #0cac4c;
+}
+
+#registro-login #section2 input ::-moz-placeholder {
+  color: #0cac4c;
+}
+
+#registro-login #section2 input :-ms-input-placeholder {
+  color: #0cac4c;
+}
+
+#registro-login #section2 .custom-select {
+  border: 1px solid #0cac4c;
+  color: #0cac4c;
+  font-size: 16px;
+  margin-bottom: 20px;
+  background: url("../assets/images/bg_dropdown_dates_v.png") no-repeat right center;
+  background-position-x: 195px;
 }
 
 footer {

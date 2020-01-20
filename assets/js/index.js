@@ -56,7 +56,20 @@ jQuery(document).ready(function($) {
     });
     // layout Isotope after each image loads
     $grid.imagesLoaded().progress( function() {
-      $grid.isotope('fitRows');
+      $grid.isotope({
+        itemSelector: '.element-item',
+        layoutMode: 'fitRows',
+        getSortData: {
+        name: '.name',
+        symbol: '.symbol',
+        number: '.number parseInt',
+        category: '[data-category]',
+        weight: function( itemElem ) {
+            var weight = $( itemElem ).find('.weight').text();
+            return parseFloat( weight.replace( /[\(\)]/g, '') );
+        }
+        }
+      });
     }); 
 
     // filter functions

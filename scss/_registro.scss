@@ -1,0 +1,58 @@
+#registro-login{
+    h2{
+        font-family: $f_ultra;
+        font-size: 75px;
+        line-height: 77px;
+        margin-bottom: 0;
+    }
+    input{
+        background: none;
+        border-radius: 0;
+        margin-bottom: 20px;
+        color: $blanco;
+        @include placeholder{
+            color: $blanco;
+        }
+    }
+    label{
+        font-family: $f_bold;
+    }
+    .custom-select{
+        background: url('../assets/images/bg_dropdown_dates.png') no-repeat right center;
+        border-radius: 0;
+        border:0;
+        color: $blanco;
+        font-size: 22px;
+        option{
+            color: $blanco;
+        }
+    }
+    #section1{
+        background: $verde;
+        color: $blanco;
+        padding-top: 40vh;
+        input{
+            border:1px solid $blanco;
+        }
+        
+    }
+    #section2{
+        color: $verde;
+        padding-top: 30px;
+        input{
+            border:1px solid $verde;
+            color: $verde;
+            @include placeholder{
+                color: $verde;
+            }
+        }
+        .custom-select{
+            border:1px solid $verde;
+            color: $verde;
+            font-size: 16px;
+            margin-bottom: 20px;
+            background: url('../assets/images/bg_dropdown_dates_v.png') no-repeat right center;
+            background-position-x: 195px;
+        }
+    }
+}
