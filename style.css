@@ -11871,6 +11871,8 @@ form.example::after {
   font-size: 75px;
   line-height: 77px;
   margin-bottom: 0;
+  position: relative;
+  top: 20px;
 }
 
 #registro-login input {
@@ -11878,6 +11880,7 @@ form.example::after {
   border-radius: 0;
   margin-bottom: 20px;
   color: #fff;
+  height: 35px;
 }
 
 #registro-login input ::-webkit-input-placeholder {
@@ -11896,6 +11899,10 @@ form.example::after {
   color: #fff;
 }
 
+#registro-login input[type="radio"] {
+  height: inherit;
+}
+
 #registro-login label {
   font-family: "Frutiger-Bold";
 }
@@ -11905,26 +11912,48 @@ form.example::after {
   border-radius: 0;
   border: 0;
   color: #fff;
-  font-size: 22px;
+  font-size: 17px;
+  height: 35px;
 }
 
 #registro-login .custom-select option {
   color: #fff;
 }
 
+#registro-login #tipo-doc {
+  border: 1px solid #fff;
+  background-position-x: 180px;
+}
+
 #registro-login #section1 {
   background: #0cac4c;
   color: #fff;
-  padding-top: 40vh;
+  padding-top: 30vh;
 }
 
 #registro-login #section1 input {
   border: 1px solid #fff;
 }
 
+#registro-login #section1 input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+#registro-login #section1 input:-moz-placeholder {
+  color: #fff;
+}
+
+#registro-login #section1 input::-moz-placeholder {
+  color: #fff;
+}
+
+#registro-login #section1 input:-ms-input-placeholder {
+  color: #fff;
+}
+
 #registro-login #section2 {
   color: #0cac4c;
-  padding-top: 30px;
+  padding: 15px 0 20vh;
 }
 
 #registro-login #section2 input {
@@ -11948,6 +11977,22 @@ form.example::after {
   color: #0cac4c;
 }
 
+#registro-login #section2 input::-webkit-input-placeholder {
+  color: #0cac4c;
+}
+
+#registro-login #section2 input:-moz-placeholder {
+  color: #0cac4c;
+}
+
+#registro-login #section2 input::-moz-placeholder {
+  color: #0cac4c;
+}
+
+#registro-login #section2 input:-ms-input-placeholder {
+  color: #0cac4c;
+}
+
 #registro-login #section2 .custom-select {
   border: 1px solid #0cac4c;
   color: #0cac4c;
@@ -11955,6 +12000,14 @@ form.example::after {
   margin-bottom: 20px;
   background: url("../assets/images/bg_dropdown_dates_v.png") no-repeat right center;
   background-position-x: 195px;
+}
+
+#registro-login .btn {
+  background: #0cac4c;
+  color: #fff;
+  border-radius: 0;
+  margin: 0 10px;
+  font-family: "Frutiger-Bold";
 }
 
 footer {

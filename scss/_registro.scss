@@ -4,15 +4,22 @@
         font-size: 75px;
         line-height: 77px;
         margin-bottom: 0;
+        position: relative;
+        top: 20px;
     }
     input{
         background: none;
         border-radius: 0;
         margin-bottom: 20px;
         color: $blanco;
+        height: 35px;
         @include placeholder{
             color: $blanco;
         }
+          
+    }
+    input[type="radio"]{
+        height: inherit;
     }
     label{
         font-family: $f_bold;
@@ -22,29 +29,42 @@
         border-radius: 0;
         border:0;
         color: $blanco;
-        font-size: 22px;
+        font-size: 17px;
+        height: 35px;
         option{
             color: $blanco;
         }
     }
+    #tipo-doc{
+        border: 1px solid $blanco;
+        background-position-x: 180px
+    }
     #section1{
         background: $verde;
         color: $blanco;
-        padding-top: 40vh;
+        padding-top: 30vh;
         input{
             border:1px solid $blanco;
+            &::-webkit-input-placeholder {color:$blanco;}
+            &:-moz-placeholder           {color:$blanco;}
+            &::-moz-placeholder          {color:$blanco;}
+            &:-ms-input-placeholder      {color:$blanco;}
         }
         
     }
     #section2{
         color: $verde;
-        padding-top: 30px;
+        padding: 15px 0 20vh;
         input{
             border:1px solid $verde;
             color: $verde;
             @include placeholder{
                 color: $verde;
             }
+            &::-webkit-input-placeholder {color:$verde}
+            &:-moz-placeholder           {color:$verde}
+            &::-moz-placeholder          {color:$verde}
+            &:-ms-input-placeholder      {color:$verde}
         }
         .custom-select{
             border:1px solid $verde;
@@ -54,5 +74,13 @@
             background: url('../assets/images/bg_dropdown_dates_v.png') no-repeat right center;
             background-position-x: 195px;
         }
+    }
+
+    .btn{
+        background:$verde;
+        color: $blanco;
+        border-radius: 0;
+        margin: 0 10px;
+        font-family: $f_bold;
     }
 }
