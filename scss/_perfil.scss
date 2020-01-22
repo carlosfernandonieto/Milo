@@ -1,0 +1,185 @@
+#user-data{
+    margin-top: 120px;
+    border-right: 2px solid $gris;
+    .circle {
+        border-radius: 1000px !important;
+        overflow: hidden;
+        width: 150px;
+        height: 150px;
+        border: 8px solid rgba(255, 255, 255, 0.7);
+        background: url('../assets/images/profile-pic.png') no-repeat;
+        background-size: cover;
+        .profile-pic {
+            display: block;
+            width: 150px;
+            height: 134px;
+            object-fit: cover;
+        }
+    }
+    .upload-button {
+      font-size: 0.8em;
+      font-family: $f_bold;
+      border:1px solid $gris;
+      border-radius: 20px;
+      &:hover {
+        transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+        color: #999;
+      }
+    }
+    #nombre{    
+        font-family: $f_bold;
+        font-size: 29px;
+        color: $gris;
+    }
+    h2{
+        font-family: $f_bold;
+        font-size: 18px;
+        color: $gris;
+        a{
+            color: $gris;
+        }
+    }
+    #c-accordions{
+        margin-top: 65px;
+        .card{
+            border: 0;
+            .card-header{
+                background-color: transparent;
+                padding-left: 0;
+                button{
+                    color: $gris_tabs;
+                    font-family: $f_light;
+                    display: block;
+                    width: 100%;
+                    text-align: left;
+                    &:after{
+                        content: "";
+                        width: 6px;
+                        height: 12px;
+                        background: url(../assets/images/after-dropdown_tabs.png) no-repeat;
+                        float: right;
+                    }
+                    &[aria-expanded='true']{
+                        &:after{
+                            transform: rotate(90deg);
+                        }
+                    }
+                }
+            }
+            .list-group-item{
+                border-left: 0;
+                border-right: 0;
+                font-family: $f_roman;
+                color: $gris_tabs;
+                background: #f3f5f7;
+            }
+
+        }
+        #accordion-promos{
+            margin-bottom: 45px;
+        }
+        #accordion-favoritos{
+            margin-bottom: 80px;
+        }
+        #c-action-profile{
+            margin-bottom: 45px;
+        }
+    }
+}
+
+#slider-data{
+  #c-slider{
+        background: rgb(58,58,58); /* Old browsers */
+        background: -moz-linear-gradient(top,  rgba(58,58,58,1) 0%, rgba(58,58,58,1) 8%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(58,58,58,1) 0%,rgba(58,58,58,1) 8%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(58,58,58,1) 0%,rgba(58,58,58,1) 8%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a3a', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+        .swiper-container {
+            width: 100%;
+            padding-top: 80px;
+            padding-bottom: 50px;
+        }
+        .swiper-slide {
+            background-position: center!important;
+            background-size: cover!important;
+            width: 300px;
+            height: 340px;
+            border-radius: 20px;    
+        }
+        .swiper-slide.swiper-slide-next{
+            background: $verde!important;
+            transform: translate3d(-300px, 0px, -100px)!important;
+        }
+        .swiper-slide.swiper-slide-prev{
+            background: $verde!important;
+            transform: translate3d(300px, 0px, -100px)!important;
+        }
+        .swiper-scrollbar{
+            background: $gris;
+        }
+        .swiper-scrollbar-drag{
+            background: $verde;
+        }
+    }
+    #c-recomendados {
+        margin: 30px 0 60px;
+        padding: 0 30px;
+        h2{
+            font-family: $f_light;
+            font-size: 22px;
+            color: $gris;
+        }
+        h3{
+            font-size: 14px;
+            text-align: center;
+            margin-top: 12px;
+            a{
+                color: $gris;
+            }
+        }
+    }
+}
+
+#edit-profile{
+    header{
+        #main-menu{
+            a{
+                color: $verde;
+            }
+            &.active{
+                color: $blanco!important;
+            }
+        }
+        
+    }
+    #user-data{
+        border-right: 2px solid $gris_borde;
+    }
+    #profile-data{
+        padding-top: 20vh;
+        label{
+            font-family: $f_bold;
+            color: #616161;
+        }
+        #update-data{
+            input[type="text"],
+            input[type="password"]{
+                border-radius: 0;
+                border: 1px solid $gris_borde;
+                margin-bottom: 20px;
+            }
+            .custom-select{
+                border-radius: 0;
+                border: 1px solid $gris_borde;
+                margin-bottom: 20px;
+            }
+    
+            .btn{
+                border: 1px solid $verde;
+                border-radius: 0;
+                color: $verde;
+                font-family: $f_bold;
+            }
+        }
+    }
+}

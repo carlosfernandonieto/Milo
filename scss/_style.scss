@@ -23,6 +23,7 @@ header{
                 &:hover{
                     background: $verde;
                     box-shadow: inset -1px 3px 17px 0px rgba(0,0,0,0.75);
+                    color: $blanco!important;
                     @include media-breakpoint-down(md){
                         background: none;
                         box-shadow: none;

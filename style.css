@@ -10654,6 +10654,7 @@ header #main-menu a.nav-link.active, header #main-menu a.nav-link:hover {
   background: #0cac4c;
   -webkit-box-shadow: inset -1px 3px 17px 0px rgba(0, 0, 0, 0.75);
           box-shadow: inset -1px 3px 17px 0px rgba(0, 0, 0, 0.75);
+  color: #fff !important;
 }
 
 @media (max-width: 991.98px) {
@@ -12007,6 +12008,220 @@ form.example::after {
   color: #fff;
   border-radius: 0;
   margin: 0 10px;
+  font-family: "Frutiger-Bold";
+}
+
+#user-data {
+  margin-top: 120px;
+  border-right: 2px solid #393939;
+}
+
+#user-data .circle {
+  border-radius: 1000px !important;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  border: 8px solid rgba(255, 255, 255, 0.7);
+  background: url("../assets/images/profile-pic.png") no-repeat;
+  background-size: cover;
+}
+
+#user-data .circle .profile-pic {
+  display: block;
+  width: 150px;
+  height: 134px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#user-data .upload-button {
+  font-size: 0.8em;
+  font-family: "Frutiger-Bold";
+  border: 1px solid #393939;
+  border-radius: 20px;
+}
+
+#user-data .upload-button:hover {
+  -webkit-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  color: #999;
+}
+
+#user-data #nombre {
+  font-family: "Frutiger-Bold";
+  font-size: 29px;
+  color: #393939;
+}
+
+#user-data h2 {
+  font-family: "Frutiger-Bold";
+  font-size: 18px;
+  color: #393939;
+}
+
+#user-data h2 a {
+  color: #393939;
+}
+
+#user-data #c-accordions {
+  margin-top: 65px;
+}
+
+#user-data #c-accordions .card {
+  border: 0;
+}
+
+#user-data #c-accordions .card .card-header {
+  background-color: transparent;
+  padding-left: 0;
+}
+
+#user-data #c-accordions .card .card-header button {
+  color: #606060;
+  font-family: "Frutiger-Light";
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+#user-data #c-accordions .card .card-header button:after {
+  content: "";
+  width: 6px;
+  height: 12px;
+  background: url(../assets/images/after-dropdown_tabs.png) no-repeat;
+  float: right;
+}
+
+#user-data #c-accordions .card .card-header button[aria-expanded='true']:after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+#user-data #c-accordions .card .list-group-item {
+  border-left: 0;
+  border-right: 0;
+  font-family: "Frutiger-Roman";
+  color: #606060;
+  background: #f3f5f7;
+}
+
+#user-data #c-accordions #accordion-promos {
+  margin-bottom: 45px;
+}
+
+#user-data #c-accordions #accordion-favoritos {
+  margin-bottom: 80px;
+}
+
+#user-data #c-accordions #c-action-profile {
+  margin-bottom: 45px;
+}
+
+#slider-data #c-slider {
+  background: #3a3a3a;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#3a3a3a), color-stop(8%, #3a3a3a), to(black));
+  background: linear-gradient(to bottom, #3a3a3a 0%, #3a3a3a 8%, black 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a3a', endColorstr='#000000',GradientType=0 );
+  /* IE6-9 */
+}
+
+#slider-data #c-slider .swiper-container {
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+#slider-data #c-slider .swiper-slide {
+  background-position: center !important;
+  background-size: cover !important;
+  width: 300px;
+  height: 340px;
+  border-radius: 20px;
+}
+
+#slider-data #c-slider .swiper-slide.swiper-slide-next {
+  background: #0cac4c !important;
+  -webkit-transform: translate3d(-300px, 0px, -100px) !important;
+          transform: translate3d(-300px, 0px, -100px) !important;
+}
+
+#slider-data #c-slider .swiper-slide.swiper-slide-prev {
+  background: #0cac4c !important;
+  -webkit-transform: translate3d(300px, 0px, -100px) !important;
+          transform: translate3d(300px, 0px, -100px) !important;
+}
+
+#slider-data #c-slider .swiper-scrollbar {
+  background: #393939;
+}
+
+#slider-data #c-slider .swiper-scrollbar-drag {
+  background: #0cac4c;
+}
+
+#slider-data #c-recomendados {
+  margin: 30px 0 60px;
+  padding: 0 30px;
+}
+
+#slider-data #c-recomendados h2 {
+  font-family: "Frutiger-Light";
+  font-size: 22px;
+  color: #393939;
+}
+
+#slider-data #c-recomendados h3 {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 12px;
+}
+
+#slider-data #c-recomendados h3 a {
+  color: #393939;
+}
+
+#edit-profile header #main-menu a {
+  color: #0cac4c;
+}
+
+#edit-profile header #main-menu.active {
+  color: #fff !important;
+}
+
+#edit-profile #user-data {
+  border-right: 2px solid #c9c9c9;
+}
+
+#edit-profile #profile-data {
+  padding-top: 20vh;
+}
+
+#edit-profile #profile-data label {
+  font-family: "Frutiger-Bold";
+  color: #616161;
+}
+
+#edit-profile #profile-data #update-data input[type="text"],
+#edit-profile #profile-data #update-data input[type="password"] {
+  border-radius: 0;
+  border: 1px solid #c9c9c9;
+  margin-bottom: 20px;
+}
+
+#edit-profile #profile-data #update-data .custom-select {
+  border-radius: 0;
+  border: 1px solid #c9c9c9;
+  margin-bottom: 20px;
+}
+
+#edit-profile #profile-data #update-data .btn {
+  border: 1px solid #0cac4c;
+  border-radius: 0;
+  color: #0cac4c;
   font-family: "Frutiger-Bold";
 }
 

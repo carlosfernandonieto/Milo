@@ -151,4 +151,63 @@ jQuery(document).ready(function($) {
         src: 'src',
         itemSelector: '.item img'
     });
+
+    // Profile pic
+
+    var readURL = function(input) {
+      if (input.files && input.files[0]) {
+          var reader = new FileReader();
+
+          reader.onload = function (e) {
+              $('.profile-pic').attr('src', e.target.result);
+          }
+  
+          reader.readAsDataURL(input.files[0]);
+      }
+    }
+  
+    $(".file-upload").on('change', function(){
+        readURL(this);
+    });
+    
+    $(".upload-button").on('click', function() {
+      $(".file-upload").click();
+    });
+
+    // Swiper
+    var swiper = new Swiper('.swiper-container-slider', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 2,
+      initialSlide: 1,
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 1,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    var swiperRecomendados = new Swiper('.swiper-container-recomendados', {
+      slidesPerView: 4,
+      spaceBetween: 10,
+
+      navigation: {
+        nextEl: '.swiper-button-next-rec',
+        prevEl: '.swiper-button-prev-rec',
+      },
+    });
+
+    // Slick perfil
+    
 });
