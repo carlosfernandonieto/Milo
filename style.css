@@ -11439,6 +11439,28 @@ form.example::after {
   display: table;
 }
 
+#error-404 {
+  height: 90vh;
+  background: url("../assets/images/bg_404.png") no-repeat, #0cac4c;
+  background-position: center 40vh;
+  background-size: contain;
+}
+
+#error-404 h1 {
+  color: #fff;
+  font-size: 41px;
+  font-family: "Frutiger-Black";
+  margin-top: 15vh;
+  letter-spacing: 3px;
+  line-height: 1;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, 1px 0px 0px #0cac4c, 0px 1px 0px #0cac4c, 2px 1px 0px #0cac4c, 1px 2px 0px #0cac4c, 3px 2px 0px #0cac4c, 2px 3px 0px #0cac4c, 4px 3px 0px #0cac4c, 3px 4px 0px #0cac4c, 5px 4px 0px #0cac4c, 3px 5px 0px #fff, 6px 5px 0px #fff, -1px 2px 0 black, 0 3px 0 #fff, 1px 4px 0 #fff, 2px 5px 0px #fff, 2px -1px 0 #fff, 3px 0 0 #fff, 4px 1px 0 #fff, 5px 2px 0px #fff, 6px 3px 0 #fff, 7px 4px 0;
+}
+
+#error-404 h1 span {
+  font-size: 150px;
+  text-shadow: none;
+}
+
 #c-productos .element-item {
   background: #41c463;
   padding: 10px 11px;
@@ -12223,6 +12245,109 @@ form.example::after {
   border-radius: 0;
   color: #0cac4c;
   font-family: "Frutiger-Bold";
+}
+
+.elemento1 {
+  color: #fff;
+  font-size: 30px;
+  opacity: 0;
+}
+
+.carousel-item .year, .carousel-item .cartel, .carousel-item .texto {
+  opacity: 0;
+}
+
+.carousel-item.active .year {
+  -webkit-animation: slide-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.carousel-item.active .cartel {
+  -webkit-animation: slide-in-top 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-top 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.carousel-item.active .texto {
+  -webkit-animation: slide-in-right 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-right 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 footer {

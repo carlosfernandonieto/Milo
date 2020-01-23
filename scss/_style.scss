@@ -668,3 +668,25 @@ form.example::after {
     clear: both;
     display: table;
 }
+
+// 404
+
+#error-404{
+    height: 90vh;
+    background: url('../assets/images/bg_404.png') no-repeat, $verde;
+    background-position: center 40vh;
+    background-size: contain;
+    h1{
+        color: $blanco;
+        font-size: 41px;
+        font-family: $f_black;
+        margin-top: 15vh;
+        letter-spacing: 3px;
+        line-height: 1;
+        text-shadow: -1px -1px 0 $blanco, 1px -1px 0 $blanco, -1px 1px 0 $blanco, 1px 1px 0 $blanco, 1px 0px 0px $verde, 0px 1px 0px $verde, 2px 1px 0px $verde, 1px 2px 0px $verde, 3px 2px 0px $verde, 2px 3px 0px $verde, 4px 3px 0px $verde, 3px 4px 0px $verde, 5px 4px 0px $verde, 3px 5px 0px $blanco, 6px 5px 0px $blanco, -1px 2px 0 black, 0 3px 0 $blanco, 1px 4px 0 $blanco, 2px 5px 0px $blanco, 2px -1px 0 $blanco, 3px 0 0 $blanco, 4px 1px 0 $blanco, 5px 2px 0px $blanco, 6px 3px 0 $blanco, 7px 4px 0;
+        span{
+            font-size: 150px;
+            text-shadow: none;
+        }
+    }
+}
