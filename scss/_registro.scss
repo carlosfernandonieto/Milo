@@ -15,14 +15,16 @@
         height: 35px;
         @include placeholder{
             color: $blanco;
-        }
-          
+        } 
     }
     input[type="radio"]{
         height: inherit;
     }
     label{
         font-family: $f_bold;
+        @include media-breakpoint-down(lg){
+            color: $verde;
+        }
     }
     .custom-select{
         background: url('../assets/images/bg_dropdown_dates.png') no-repeat right center;
@@ -34,6 +36,15 @@
         option{
             color: $blanco;
         }
+
+        @include media-breakpoint-down(md){
+            border:1px solid $verde!important;
+            &::-webkit-input-placeholder {color:$verde;}
+            &:-moz-placeholder           {color:$verde;}
+            &::-moz-placeholder          {color:$verde;}
+            &:-ms-input-placeholder      {color:$verde;}
+            color: $verde;
+        } 
     }
     #tipo-doc{
         border: 1px solid $blanco;
@@ -49,6 +60,17 @@
             &:-moz-placeholder           {color:$blanco;}
             &::-moz-placeholder          {color:$blanco;}
             &:-ms-input-placeholder      {color:$blanco;}
+            @include media-breakpoint-down(md){
+                border:1px solid $verde;
+                &::-webkit-input-placeholder {color:$verde;}
+                &:-moz-placeholder           {color:$verde;}
+                &::-moz-placeholder          {color:$verde;}
+                &:-ms-input-placeholder      {color:$verde;}
+            } 
+        }
+        @include media-breakpoint-down(md){
+            background: none;
+            padding-top: 0;
         }
         
     }
@@ -82,5 +104,24 @@
         border-radius: 0;
         margin: 0 10px;
         font-family: $f_bold;
+    }
+    #section1-m{
+        background: $verde;
+        padding: 20vh 30px 0;
+        div{
+           color: $blanco;
+           font-family: $f_ultra;
+            font-size: 50px;
+            line-height: 52px;
+        }
+    }
+    #section2-m{
+        padding: 10px 30px 0;
+        div{
+            color: $verde;
+            font-family: $f_ultra;
+            font-size: 50px;
+            line-height: 52px;
+        }
     }
 }

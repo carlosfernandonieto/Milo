@@ -181,5 +181,8 @@
                 font-family: $f_bold;
             }
         }
+        @include media-breakpoint-down(lg){
+            padding-top: 2vh;
+        }
     }
 }

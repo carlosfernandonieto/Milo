@@ -11739,7 +11739,17 @@ form.example::after {
   font-family: "Frutiger-Black";
 }
 
+@media (max-width: 991.98px) {
+  .c-lonchera .element-item .overlay h3 {
+    font-size: 18px;
+  }
+}
+
 .c-lonchera .element-item .overlay a {
+  color: #fff;
+}
+
+.c-lonchera .element-item .overlay a.btn {
   color: #fff;
   display: inline-block;
   padding: 5px 10px;
@@ -11749,7 +11759,7 @@ form.example::after {
   font-size: 18px;
 }
 
-.c-lonchera .element-item .overlay a:after {
+.c-lonchera .element-item .overlay a.btn:after {
   content: "";
   width: 9px;
   height: 17px;
@@ -11760,9 +11770,51 @@ form.example::after {
   margin-left: 10px;
 }
 
+@media (max-width: 991.98px) {
+  .c-lonchera .element-item .overlay .btn-titulo {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    background: #fff;
+    width: 100%;
+    color: #393939;
+    padding-top: 15px;
+    position: relative;
+  }
+  .c-lonchera .element-item .overlay .btn-titulo h3 {
+    font-family: "Frutiger-Light";
+  }
+  .c-lonchera .element-item .overlay .btn-titulo:after {
+    content: "";
+    width: 6px;
+    height: 12px;
+    background: url("../assets/images/after-dropdown_tabs.png") no-repeat;
+    float: right;
+    position: absolute;
+    right: 8px;
+    top: calc(50% - 9px);
+  }
+}
+
+@media (max-width: 991.98px) {
+  .c-lonchera .element-item .overlay {
+    opacity: 1;
+    background-color: transparent;
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: flex-end !important;
+  }
+}
+
 .c-lonchera .element-item:hover .overlay {
   background: rgba(0, 0, 0, 0.6);
   opacity: 1;
+}
+
+@media (max-width: 991.98px) {
+  .c-lonchera .element-item {
+    margin-bottom: 40px !important;
+  }
 }
 
 #eventos {
@@ -11930,6 +11982,12 @@ form.example::after {
   font-family: "Frutiger-Bold";
 }
 
+@media (max-width: 1199.98px) {
+  #registro-login label {
+    color: #0cac4c;
+  }
+}
+
 #registro-login .custom-select {
   background: url("../assets/images/bg_dropdown_dates.png") no-repeat right center;
   border-radius: 0;
@@ -11941,6 +11999,25 @@ form.example::after {
 
 #registro-login .custom-select option {
   color: #fff;
+}
+
+@media (max-width: 991.98px) {
+  #registro-login .custom-select {
+    border: 1px solid #0cac4c !important;
+    color: #0cac4c;
+  }
+  #registro-login .custom-select::-webkit-input-placeholder {
+    color: #0cac4c;
+  }
+  #registro-login .custom-select:-moz-placeholder {
+    color: #0cac4c;
+  }
+  #registro-login .custom-select::-moz-placeholder {
+    color: #0cac4c;
+  }
+  #registro-login .custom-select:-ms-input-placeholder {
+    color: #0cac4c;
+  }
 }
 
 #registro-login #tipo-doc {
@@ -11972,6 +12049,31 @@ form.example::after {
 
 #registro-login #section1 input:-ms-input-placeholder {
   color: #fff;
+}
+
+@media (max-width: 991.98px) {
+  #registro-login #section1 input {
+    border: 1px solid #0cac4c;
+  }
+  #registro-login #section1 input::-webkit-input-placeholder {
+    color: #0cac4c;
+  }
+  #registro-login #section1 input:-moz-placeholder {
+    color: #0cac4c;
+  }
+  #registro-login #section1 input::-moz-placeholder {
+    color: #0cac4c;
+  }
+  #registro-login #section1 input:-ms-input-placeholder {
+    color: #0cac4c;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #registro-login #section1 {
+    background: none;
+    padding-top: 0;
+  }
 }
 
 #registro-login #section2 {
@@ -12031,6 +12133,29 @@ form.example::after {
   border-radius: 0;
   margin: 0 10px;
   font-family: "Frutiger-Bold";
+}
+
+#registro-login #section1-m {
+  background: #0cac4c;
+  padding: 20vh 30px 0;
+}
+
+#registro-login #section1-m div {
+  color: #fff;
+  font-family: "Frutiger-Ultra";
+  font-size: 50px;
+  line-height: 52px;
+}
+
+#registro-login #section2-m {
+  padding: 10px 30px 0;
+}
+
+#registro-login #section2-m div {
+  color: #0cac4c;
+  font-family: "Frutiger-Ultra";
+  font-size: 50px;
+  line-height: 52px;
 }
 
 #user-data {
@@ -12247,29 +12372,132 @@ form.example::after {
   font-family: "Frutiger-Bold";
 }
 
-.elemento1 {
-  color: #fff;
-  font-size: 30px;
+@media (max-width: 1199.98px) {
+  #edit-profile #profile-data {
+    padding-top: 2vh;
+  }
+}
+
+#c-storyline {
+  background: #fbfaf6;
+}
+
+#c-storyline #storyline .carousel-item {
+  background: url("../assets/images/milo-co/bg_milo-co.png") center center no-repeat;
+  -webkit-animation: slide-in-top-bg 2s ease-in;
+  animation: slide-in-top-bg 2s ease-in;
+}
+
+#c-storyline #storyline .carousel-item .year, #c-storyline #storyline .carousel-item .cartel, #c-storyline #storyline .carousel-item .c-texto {
   opacity: 0;
 }
 
-.carousel-item .year, .carousel-item .cartel, .carousel-item .texto {
-  opacity: 0;
-}
-
-.carousel-item.active .year {
+#c-storyline #storyline .carousel-item.active .year {
   -webkit-animation: slide-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.carousel-item.active .cartel {
+#c-storyline #storyline .carousel-item.active .cartel {
   -webkit-animation: slide-in-top 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-top 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.carousel-item.active .texto {
+#c-storyline #storyline .carousel-item.active .c-texto {
   -webkit-animation: slide-in-right 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-right 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+#c-storyline #storyline .carousel-item .c-texto .texto {
+  font-family: "Frutiger-Light";
+  font-size: 19px;
+  color: #6f7075;
+}
+
+#c-storyline #storyline .carousel-item .c-texto .destacado {
+  font-family: "Frutiger-Black";
+  font-size: 100px;
+  color: #253624;
+  line-height: 1.2;
+}
+
+@media (max-width: 991.98px) {
+  #c-storyline #storyline .carousel-item .c-texto {
+    margin-top: 15px;
+  }
+}
+
+#c-storyline #storyline .carousel-item:nth-child(even) {
+  -webkit-animation: slide-in-top-bg-even 2s ease-in;
+  animation: slide-in-top-bg-even 2s ease-in;
+}
+
+#c-storyline #storyline .carousel-indicators {
+  right: -15vh;
+  left: unset;
+  top: 0;
+  margin-right: auto;
+  color: #253624;
+  font-family: "Frutiger-Black";
+  font-size: 26px;
+  opacity: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#c-storyline #storyline .carousel-indicators li {
+  width: auto;
+  height: auto;
+  text-indent: unset;
+  opacity: 1;
+  background-color: transparent;
+  margin: 0 5px;
+}
+
+#c-storyline #storyline .carousel-indicators li.active {
+  position: relative;
+  color: #0cac4c;
+}
+
+#c-storyline #storyline .carousel-indicators li.active::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-right: 6px solid #0cac4c;
+  position: absolute;
+  top: calc(50% - 8px);
+  right: -15px;
+}
+
+@media (max-width: 991.98px) {
+  #c-storyline #storyline .carousel-indicators li.active::after {
+    bottom: -5px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    top: unset;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #c-storyline #storyline .carousel-indicators {
+    right: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: auto;
+    left: 0;
+    margin: 0;
+    top: -50px;
+    bottom: unset;
+    font-size: 20px;
+  }
 }
 
 @-webkit-keyframes slide-in-bottom {
@@ -12347,6 +12575,42 @@ form.example::after {
     -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-in-top-bg {
+  0% {
+    background-position: top;
+  }
+  100% {
+    background-position: center;
+  }
+}
+
+@keyframes slide-in-top-bg {
+  0% {
+    background-position: top;
+  }
+  100% {
+    background-position: center;
+  }
+}
+
+@-webkit-keyframes slide-in-top-bg-even {
+  0% {
+    background-position: bottom;
+  }
+  100% {
+    background-position: center;
+  }
+}
+
+@keyframes slide-in-top-bg-even {
+  0% {
+    background-position: bottom;
+  }
+  100% {
+    background-position: center;
   }
 }
 

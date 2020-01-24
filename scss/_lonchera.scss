@@ -18,25 +18,60 @@
             h3{
                 font-size: 24px;
                 font-family: $f_black;
+                @include media-breakpoint-down(md){
+                    font-size: 18px;
+                }
             }
             a{
                 color: $blanco;
-                display: inline-block;
-                padding: 5px 10px;
-                border: 1px solid $blanco;
-                border-radius: 0;
-                font-family: $f_bold;
-                font-size: 18px;
-                &:after{
-                    content: "";
-                    width: 9px;
-                    height: 17px;
-                    background: url(../assets/images/after-dropdown-b.png) no-repeat;
+                &.btn{
+                    color: $blanco;
                     display: inline-block;
-                    position: relative;
-                    top: 2px;
-                    margin-left: 10px;
+                    padding: 5px 10px;
+                    border: 1px solid $blanco;
+                    border-radius: 0;
+                    font-family: $f_bold;
+                    font-size: 18px;
+                    &:after{
+                        content: "";
+                        width: 9px;
+                        height: 17px;
+                        background: url(../assets/images/after-dropdown-b.png) no-repeat;
+                        display: inline-block;
+                        position: relative;
+                        top: 2px;
+                        margin-left: 10px;
+                    }
                 }
+            }
+            .btn-titulo{
+                @include media-breakpoint-down(md){
+                    order: 4;
+                    background: $blanco;
+                    width: 100%;
+                    color: $gris;
+                    padding-top:15px;
+                    position: relative;
+                    h3{
+                        font-family: $f_light;
+                    }
+                    &:after{
+                        content: "";
+                        width: 6px;
+                        height: 12px;
+                        background: url('../assets/images/after-dropdown_tabs.png') no-repeat;
+                        float: right;
+                        position: absolute;
+                        right: 8px;
+                        top: calc(50% - 9px);
+                    }
+                }
+            }
+            @include media-breakpoint-down(md){
+                opacity: 1;
+                background-color: transparent;
+                justify-content: flex-end!important;
+                
             }
         }
         &:hover{
@@ -45,6 +80,8 @@
                 opacity: 1;
             }
         }
-        
+        @include media-breakpoint-down(md){
+            margin-bottom: 40px!important;
+        }
     }
 }

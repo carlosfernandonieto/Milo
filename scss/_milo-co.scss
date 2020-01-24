@@ -1,29 +1,105 @@
-.elemento1{
-    color: $blanco;
-    font-size: 30px;
-    opacity: 0;
+#c-storyline{
+        background: #fbfaf6;
+        #storyline{
+                .carousel-item{
+                        background: url('../assets/images/milo-co/bg_milo-co.png') center center no-repeat;
+                        -webkit-animation: slide-in-top-bg 2s ease-in ;
+                        animation: slide-in-top-bg 2s ease-in ;
+                        .year,.cartel,.c-texto{
+                                opacity: 0;
+                        }
+                        &.active{
+                                .year {
+                                        -webkit-animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                                        animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                                }
+                
+                                .cartel{
+                                        -webkit-animation: slide-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                                        animation: slide-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                                }
+                                .c-texto{
+                                        -webkit-animation: slide-in-right 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                                        animation: slide-in-right 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                                }
+                        }
+                        .c-texto{
+                                .texto{
+                                        font-family: $f_light;
+                                        font-size: 19px;
+                                        color: #6f7075;
+                                }
+                                .destacado{
+                                        font-family: $f_black;
+                                        font-size: 100px;
+                                        color: #253624;
+                                        line-height: 1.2;
+                                }
+                                @include media-breakpoint-down(md){
+                                        margin-top: 15px;
+                                }
+                        }
+                        &:nth-child(even){
+                                -webkit-animation: slide-in-top-bg-even 2s ease-in ;
+                                animation: slide-in-top-bg-even 2s ease-in ;
+                        }
+                }
+                .carousel-indicators{
+                        right: -15vh;
+                        left: unset;
+                        top: 0;
+                        margin-right: auto;
+                        color: #253624;
+                        font-family: "Frutiger-Black";
+                        font-size: 26px;
+                        opacity: 1;
+                        flex-direction: column;
+                        li{
+                                width: auto;
+                                height: auto;
+                                text-indent: unset;
+                                opacity: 1;
+                                background-color: transparent;
+                                margin: 0 5px;
+                                &.active{
+                                        position: relative;
+                                        color: $verde;
+                                        &::after{
+                                                content: "";
+                                                width: 0px;
+                                                height: 0px;
+                                                border-top: 6px solid transparent;
+                                                border-bottom: 6px solid transparent;
+                                                border-right: 6px solid #0cac4c;
+                                                position: absolute;
+                                                top: calc(50% - 8px);
+                                                right: -15px;
+                                                @include media-breakpoint-down(md){
+                                                        bottom: -5px;
+                                                        right: 0;
+                                                        left: 0;
+                                                        margin: auto;
+                                                        transform: rotate(90deg);
+                                                        top: unset;
+                                                }
+                                        }
+                                }
+                        }
+                        @include media-breakpoint-down(md){
+                                right: 0;
+                                flex-direction: row;
+                                height: auto;
+                                left: 0;
+                                margin: 0;
+                                top: -50px;
+                                bottom: unset;
+                                font-size: 20px;
+                        }
+                }
+        }
 }
 
-.carousel-item{
-        .year,.cartel,.texto{
-                opacity: 0;
-        }
-        &.active{
-                .year {
-                        -webkit-animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                        animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                }
 
-                .cartel{
-                        -webkit-animation: slide-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                        animation: slide-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                }
-                .texto{
-                        -webkit-animation: slide-in-right 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	                animation: slide-in-right 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-                }
-        }
-}
 
 @-webkit-keyframes slide-in-bottom {
         0% {
@@ -101,4 +177,37 @@
       }
       
       
-      
+@-webkit-keyframes slide-in-top-bg {
+        0% {
+        background-position: top;
+        }
+        100% {
+        background-position: center;
+        }
+      }
+@keyframes slide-in-top-bg {
+        0% {
+        background-position: top;
+        }
+        100% {
+        background-position: center;
+        }
+}
+
+@-webkit-keyframes slide-in-top-bg-even {
+        0% {
+        background-position: bottom;
+        }
+        100% {
+        background-position: center;
+        }
+      }
+@keyframes slide-in-top-bg-even {
+        0% {
+        background-position: bottom;
+        }
+        100% {
+        background-position: center;
+        }
+}
+            
