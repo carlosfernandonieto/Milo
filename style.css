@@ -10675,7 +10675,7 @@ header #main-menu a.nav-link.active, header #main-menu a.nav-link:hover {
   }
   header #main-menu a.nav-link::after {
     content: "";
-    background: url("../assets/images/after-dropdown-b.png") no-repeat;
+    background: url("assets/images/after-dropdown-b.png") no-repeat;
     width: 9px;
     height: 17px;
     float: right;
@@ -11034,7 +11034,7 @@ header #user-menu ul li:first-child a::after {
   content: "";
   width: 9px;
   height: 17px;
-  background: url(../assets/images/after-dropdown-b.png) no-repeat;
+  background: url(assets/images/after-dropdown-b.png) no-repeat;
   display: inline-block;
   position: relative;
   top: 0px;
@@ -11122,7 +11122,7 @@ header #user-menu ul li:first-child a::after {
   content: "";
   width: 9px;
   height: 17px;
-  background: url(../assets/images/after-dropdown-b.png) no-repeat;
+  background: url(assets/images/after-dropdown-b.png) no-repeat;
   display: inline-block;
   position: relative;
   top: 2px;
@@ -11153,7 +11153,7 @@ header #user-menu ul li:first-child a::after {
   content: "";
   width: 9px;
   height: 17px;
-  background: url(../assets/images/after-dropdown-b.png) no-repeat;
+  background: url(assets/images/after-dropdown-b.png) no-repeat;
   display: inline-block;
   position: relative;
   top: 2px;
@@ -11166,7 +11166,7 @@ header #user-menu ul li:first-child a::after {
 }
 
 .dropdown-toggle::after {
-  background: url("../assets/images/after-dropdown.png") no-repeat;
+  background: url("assets/images/after-dropdown.png") no-repeat;
   width: 17px;
   height: 9px;
   border-right: 0;
@@ -11377,7 +11377,7 @@ header #user-menu ul li:first-child a::after {
 
 .slick-next:before {
   content: "" !important;
-  background: url("../assets/images/slick-next.png");
+  background: url("assets/images/slick-next.png");
   width: 17px;
   height: 33px;
   display: block;
@@ -11392,7 +11392,7 @@ header #user-menu ul li:first-child a::after {
 
 .slick-prev:before {
   content: "" !important;
-  background: url("../assets/images/slick-prev.png");
+  background: url("assets/images/slick-prev.png");
   width: 17px;
   height: 33px;
   display: block;
@@ -11441,7 +11441,7 @@ form.example::after {
 
 #error-404 {
   height: 90vh;
-  background: url("../assets/images/bg_404.png") no-repeat, #0cac4c;
+  background: url("assets/images/bg_404.png") no-repeat, #0cac4c;
   background-position: center 40vh;
   background-size: contain;
 }
@@ -11508,7 +11508,7 @@ form.example::after {
   content: "";
   width: 15px;
   height: 15px;
-  background: url("../assets/images/check_btn.png") no-repeat;
+  background: url("assets/images/check_btn.png") no-repeat;
   display: inline-block;
   margin-right: 5px;
 }
@@ -11517,7 +11517,7 @@ form.example::after {
   content: "";
   width: 15px;
   height: 15px;
-  background: url("../assets/images/act-check_btn.png") no-repeat;
+  background: url("assets/images/act-check_btn.png") no-repeat;
   display: inline-block;
   margin-right: 5px;
 }
@@ -11599,7 +11599,7 @@ form.example::after {
 }
 
 #c-producto #c-info-producto #tabla-producto button#saber-mas::after {
-  background: url("../assets/images/after-dropdown-b.png") no-repeat;
+  background: url("assets/images/after-dropdown-b.png") no-repeat;
   width: 9px;
   height: 17px;
   top: 5px;
@@ -11677,8 +11677,7 @@ form.example::after {
   content: "";
   width: 17px;
   height: 9px;
-  background: url("../assets/images/after-dropdown.png") no-repeat;
-  display: inline-block;
+  background: url("assets/images/after-dropdown.png") no-repeat;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   position: relative;
@@ -11763,7 +11762,7 @@ form.example::after {
   content: "";
   width: 9px;
   height: 17px;
-  background: url(../assets/images/after-dropdown-b.png) no-repeat;
+  background: url(assets/images/after-dropdown-b.png) no-repeat;
   display: inline-block;
   position: relative;
   top: 2px;
@@ -11788,7 +11787,7 @@ form.example::after {
     content: "";
     width: 6px;
     height: 12px;
-    background: url("../assets/images/after-dropdown_tabs.png") no-repeat;
+    background: url("assets/images/after-dropdown_tabs.png") no-repeat;
     float: right;
     position: absolute;
     right: 8px;
@@ -11930,7 +11929,7 @@ form.example::after {
   content: "";
   width: 9px;
   height: 17px;
-  background: url(../assets/images/after-dropdown-b.png) no-repeat;
+  background: url(assets/images/after-dropdown-b.png) no-repeat;
   display: inline-block;
   position: relative;
   top: 2px;

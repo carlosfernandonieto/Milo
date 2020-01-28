@@ -35,7 +35,7 @@
                 content: "";
                 width: 15px;
                 height: 15px;
-                background: url('../assets/images/check_btn.png') no-repeat;
+                background: url('assets/images/check_btn.png') no-repeat;
                 display: inline-block;
                 margin-right: 5px;
             }
@@ -44,7 +44,7 @@
                     content: "";
                     width: 15px;
                     height: 15px;
-                    background: url('../assets/images/act-check_btn.png') no-repeat;
+                    background: url('assets/images/act-check_btn.png') no-repeat;
                     display: inline-block;
                     margin-right: 5px;
                 }
@@ -117,7 +117,7 @@
                  border: 2px solid $blanco;
                  color: $blanco;
                  &::after{
-                    background: url('../assets/images/after-dropdown-b.png') no-repeat;
+                    background: url('assets/images/after-dropdown-b.png') no-repeat;
                     width: 9px;
                     height: 17px;
                     top: 5px;
@@ -188,8 +188,7 @@
                         content:"";
                         width: 17px;
                         height: 9px;
-                        background:url('../assets/images/after-dropdown.png') no-repeat;
-                        display: inline-block;
+                        background:url('assets/images/after-dropdown.png') no-repeat;
                         transform: rotate(-90deg);
                         position: relative;
                         top: 6px;
