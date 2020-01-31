@@ -53,7 +53,7 @@
     #section1{
         background: $verde;
         color: $blanco;
-        padding-top: 30vh;
+        padding-top: 25vh;
         input{
             border:1px solid $blanco;
             &::-webkit-input-placeholder {color:$blanco;}
@@ -106,13 +106,15 @@
         font-family: $f_bold;
     }
     #section1-m{
-        background: $verde;
-        padding: 20vh 30px 0;
-        div{
-           color: $blanco;
-           font-family: $f_ultra;
-            font-size: 50px;
-            line-height: 52px;
+        @include media-breakpoint-down(md){
+            background: $verde;
+            padding: 20vh 30px 0;
+            div{
+            color: $blanco;
+            font-family: $f_ultra;
+                font-size: 50px;
+                line-height: 52px;
+            }
         }
     }
     #section2-m{

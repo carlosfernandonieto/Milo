@@ -10841,15 +10841,14 @@ header #user-menu ul li:first-child a::after {
 
 .slider .carousel .carousel-caption {
   position: absolute;
-  right: 15%;
-  bottom: 30%;
+  top: calc(40% - 75px);
   right: 15%;
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
   color: #fff;
   text-align: right;
-  text-shadow: 1px 1px 1px #000;
+  text-shadow: 1px 1px 6px #000;
 }
 
 .slider .carousel .carousel-caption h5, .slider .carousel .carousel-caption h6 {
@@ -10888,8 +10887,6 @@ header #user-menu ul li:first-child a::after {
 }
 
 .slider .myButton {
-  -webkit-box-shadow: 2px 2px 0px 0px #fff;
-          box-shadow: 2px 2px 0px 0px #fff;
   background-color: transparent;
   border: 1px solid #fff;
   display: inline-block;
@@ -10903,6 +10900,22 @@ header #user-menu ul li:first-child a::after {
   font-family: "Frutiger-Bold";
   letter-spacing: 2px;
   text-transform: uppercase;
+  position: relative;
+}
+
+.slider .myButton::after {
+  content: "";
+  border-top: 0;
+  border-left: 0;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  bottom: -4px;
+  left: 4px;
+  z-index: 1;
 }
 
 .breadcrumb {
@@ -11228,101 +11241,129 @@ header #user-menu ul li:first-child a::after {
 }
 
 .social-icon--linkedin {
-  background: #006599;
+  background: #e5e5e5;
   color: #fff;
 }
 
 .social-icon--linkedin .tooltip {
-  background: #006599;
+  background: #0cac4c;
   color: currentColor;
 }
 
 .social-icon--linkedin .tooltip:after {
-  border-top-color: #006599;
+  border-top-color: #0cac4c;
+}
+
+.social-icon--linkedin:hover {
+  background: #0cac4c;
 }
 
 .social-icon--twitter {
-  background: #2b97f1;
+  background: #e5e5e5;
   color: #fff;
 }
 
 .social-icon--twitter .tooltip {
-  background: #2b97f1;
+  background: #0cac4c;
   color: currentColor;
 }
 
 .social-icon--twitter .tooltip:after {
-  border-top-color: #2b97f1;
+  border-top-color: #0cac4c;
+}
+
+.social-icon--twitter:hover {
+  background: #0cac4c;
 }
 
 .social-icon--codepen {
-  background: #000;
+  background: #e5e5e5;
   color: #fff;
 }
 
 .social-icon--codepen .tooltip {
-  background: #000;
+  background: #0cac4c;
   color: currentColor;
 }
 
 .social-icon--codepen .tooltip:after {
-  border-top-color: #000;
+  border-top-color: #0cac4c;
+}
+
+.social-icon--codepen:hover {
+  background: #0cac4c;
 }
 
 .social-icon--facebook {
-  background: #3b5a9b;
+  background: #e5e5e5;
   color: #fff;
 }
 
 .social-icon--facebook .tooltip {
-  background: #3b5a9b;
+  background: #0cac4c;
   color: currentColor;
 }
 
 .social-icon--facebook .tooltip:after {
-  border-top-color: #3b5a9b;
+  border-top-color: #0cac4c;
+}
+
+.social-icon--facebook:hover {
+  background: #0cac4c;
 }
 
 .social-icon--instagram {
-  background: #527fa6;
+  background: #e5e5e5;
   color: #fff;
 }
 
 .social-icon--instagram .tooltip {
-  background: #527fa6;
+  background: #0cac4c;
   color: currentColor;
 }
 
 .social-icon--instagram .tooltip:after {
-  border-top-color: #527fa6;
+  border-top-color: #0cac4c;
+}
+
+.social-icon--instagram:hover {
+  background: #0cac4c;
 }
 
 .social-icon--dribbble {
-  background: #ef5a92;
+  background: #e5e5e5;
   color: #fff;
 }
 
 .social-icon--dribbble .tooltip {
-  background: #ef5a92;
+  background: #0cac4c;
   color: currentColor;
 }
 
 .social-icon--dribbble .tooltip:after {
-  border-top-color: #ef5a92;
+  border-top-color: #0cac4c;
+}
+
+.social-icon--dribbble:hover {
+  background: #0cac4c;
 }
 
 .social-icon--github {
-  background: #4284c0;
+  background: #e5e5e5;
   color: #fff;
 }
 
 .social-icon--github .tooltip {
-  background: #4284c0;
+  background: #0cac4c;
   color: currentColor;
 }
 
 .social-icon--github .tooltip:after {
-  border-top-color: #4284c0;
+  border-top-color: #0cac4c;
+}
+
+.social-icon--github:hover {
+  background: #0cac4c;
 }
 
 .social-icon i {
@@ -12027,7 +12068,7 @@ form.example::after {
 #registro-login #section1 {
   background: #0cac4c;
   color: #fff;
-  padding-top: 30vh;
+  padding-top: 25vh;
 }
 
 #registro-login #section1 input {
@@ -12134,16 +12175,17 @@ form.example::after {
   font-family: "Frutiger-Bold";
 }
 
-#registro-login #section1-m {
-  background: #0cac4c;
-  padding: 20vh 30px 0;
-}
-
-#registro-login #section1-m div {
-  color: #fff;
-  font-family: "Frutiger-Ultra";
-  font-size: 50px;
-  line-height: 52px;
+@media (max-width: 991.98px) {
+  #registro-login #section1-m {
+    background: #0cac4c;
+    padding: 20vh 30px 0;
+  }
+  #registro-login #section1-m div {
+    color: #fff;
+    font-family: "Frutiger-Ultra";
+    font-size: 50px;
+    line-height: 52px;
+  }
 }
 
 #registro-login #section2-m {
@@ -12168,7 +12210,7 @@ form.example::after {
   width: 150px;
   height: 150px;
   border: 8px solid rgba(255, 255, 255, 0.7);
-  background: url("../assets/images/profile-pic.png") no-repeat;
+  background: url("assets/images/profile-pic.png") no-repeat;
   background-size: cover;
 }
 
@@ -12234,7 +12276,7 @@ form.example::after {
   content: "";
   width: 6px;
   height: 12px;
-  background: url(../assets/images/after-dropdown_tabs.png) no-repeat;
+  background: url(assets/images/after-dropdown_tabs.png) no-repeat;
   float: right;
 }
 
@@ -12291,14 +12333,32 @@ form.example::after {
 
 #slider-data #c-slider .swiper-slide.swiper-slide-next {
   background: #0cac4c !important;
-  -webkit-transform: translate3d(-300px, 0px, -100px) !important;
-          transform: translate3d(-300px, 0px, -100px) !important;
+  position: relative;
+  z-index: 100 !important;
+}
+
+@media (min-width: 1200px) {
+  #slider-data #c-slider .swiper-slide.swiper-slide-next {
+    -webkit-transform: translate3d(-50vh, 0px, -100px) !important;
+            transform: translate3d(-50vh, 0px, -100px) !important;
+  }
 }
 
 #slider-data #c-slider .swiper-slide.swiper-slide-prev {
   background: #0cac4c !important;
-  -webkit-transform: translate3d(300px, 0px, -100px) !important;
-          transform: translate3d(300px, 0px, -100px) !important;
+  position: relative;
+}
+
+@media (min-width: 1200px) {
+  #slider-data #c-slider .swiper-slide.swiper-slide-prev {
+    -webkit-transform: translate3d(50vh, 0px, -100px) !important;
+            transform: translate3d(50vh, 0px, -100px) !important;
+  }
+}
+
+#slider-data #c-slider .swiper-slide.swiper-slide-active {
+  -webkit-box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.43);
+  box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.43);
 }
 
 #slider-data #c-slider .swiper-scrollbar {
@@ -12307,6 +12367,22 @@ form.example::after {
 
 #slider-data #c-slider .swiper-scrollbar-drag {
   background: #0cac4c;
+}
+
+#slider-data #c-slider .swiper-button-next {
+  right: 30px;
+  background-image: none;
+  background: url("assets/images/bg_sliders-btn.png") no-repeat;
+  background-position: top;
+}
+
+#slider-data #c-slider .swiper-button-prev {
+  left: 30px;
+  background-image: none;
+  background: url("assets/images/bg_sliders-btn.png") no-repeat;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background-position: bottom;
 }
 
 #slider-data #c-recomendados {
@@ -12328,6 +12404,22 @@ form.example::after {
 
 #slider-data #c-recomendados h3 a {
   color: #393939;
+}
+
+#slider-data #c-recomendados .swiper-button-next {
+  right: -30px;
+  background-image: none;
+  background: url("assets/images/bg_sliders-btn.png") no-repeat;
+  background-position: top;
+}
+
+#slider-data #c-recomendados .swiper-button-prev {
+  left: -30px;
+  background-image: none;
+  background: url("assets/images/bg_sliders-btn.png") no-repeat;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background-position: bottom;
 }
 
 #edit-profile header #main-menu a {
@@ -12382,7 +12474,7 @@ form.example::after {
 }
 
 #c-storyline #storyline .carousel-item {
-  background: url("../assets/images/milo-co/bg_milo-co.png") center center no-repeat;
+  background: url("assets/images/milo-co/bg_milo-co.png") center center no-repeat;
   -webkit-animation: slide-in-top-bg 2s ease-in;
   animation: slide-in-top-bg 2s ease-in;
 }

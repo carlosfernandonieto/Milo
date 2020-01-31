@@ -180,13 +180,13 @@ jQuery(document).ready(function($) {
       grabCursor: true,
       centeredSlides: true,
       slidesPerView: 2,
-      initialSlide: 1,
+      initialSlide: 2,
       coverflowEffect: {
         rotate: 0,
         stretch: 1,
         depth: 100,
         modifier: 1,
-        slideShadows : true,
+        slideShadows : false,
       },
       scrollbar: {
         el: '.swiper-scrollbar',
